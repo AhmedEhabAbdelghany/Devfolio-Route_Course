@@ -1,0 +1,400 @@
+            body {
+                font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                background-color: #F5F5F5;
+            }
+
+            body a {
+                text-decoration: none;
+            }
+
+            :root {
+                --main-color: #0078FF;
+            }
+
+            /* ------------------------Start Nav and Header------------------------ */
+
+            header {
+                background-image: url(../images/hero-bg.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center center;
+                height: 100vh;
+                position: relative;
+
+                h1 {
+                    font-size: 5em;
+                }
+
+                p {
+                    font-size: 40px;
+                    font-weight: 600;
+                }
+            }
+
+            header::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.596);
+            }
+
+            .Caption {
+                z-index: 1;
+            }
+
+            /* Typed Animation */
+
+            .typed-cursor {
+                /* animation: blink; */
+                color: white;
+                margin-left: 3px;
+            }
+
+            /* End Typed Animation  */
+
+            .container-fluid a:hover {
+                color: white;
+            }
+
+            #navbarNav a:hover {
+                color: white;
+            }
+
+            #navbarNav a {
+                position: relative;
+            }
+
+            #navbarNav a:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border: 0px solid;
+                width: 0;
+                transition: 0.5s all;
+            }
+
+            #navbarNav a:hover:after {
+                border: 1px solid white;
+                width: 70%;
+            }
+
+            /* ------------------------End Nav and Header------------------------ */
+            /* ------------------------Start About------------------------ */
+
+            .Our-Personal-Info {
+                p {
+                    color: #4e4e4e;
+                }
+
+                span {
+                    font-weight: 600;
+                    color: #1e1e1e;
+                    font-size: 1.1rem;
+                }
+            }
+
+            .Our-Progress {
+                p {
+                    font-weight: 600;
+                    color: #1e1e1e;
+                    font-size: 1.1rem;
+                }
+
+                span {
+                    color: #4e4e4e;
+                }
+            }
+
+            .About-Info {
+                h5 {
+                    font-size: 32px;
+                    position: relative;
+                }
+
+                h5::after {
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+                    content: "";
+                    width: 103px;
+                    border-bottom: 3px solid var(--main-color);
+                }
+            }
+
+            /* ------------------------End About------------------------ */
+            /* ------------------------Start Services------------------------ */
+
+            .Our-Services {
+                h3 {
+                    font-size: 48px;
+                    font-weight: 700;
+                }
+
+                .Subtitle {
+                    position: relative;
+                }
+
+                .Subtitle::before {
+                    margin: auto;
+                    content: "";
+                    position: absolute;
+                    top: 50px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 50px;
+                    border-bottom: 5px solid var(--main-color);
+                }
+
+                .Our-Card-Des {
+                    h2 {
+                        font-size: 22.4px;
+                        font-weight: 500;
+                        line-height: 3;
+                    }
+                }
+            }
+
+            .icon {
+                font-size: 35px;
+                width: 120px;
+                height: 120px;
+                border: 10px solid var(--main-color);
+                transition: 0.5s all;
+            }
+
+            .Our-Card-Hover:hover .icon {
+                background-color: var(--main-color);
+                border: 10px solid #8dbef5;
+                color: white;
+            }
+
+            /* ------------------------End Services------------------------ */
+            /* ------------------------Start Counters------------------------ */
+
+            .Our-Counters {
+                background-image: url(../images/counters-bg.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                position: relative;
+                /* z-index: -1; */
+            }
+
+            .Our-Counters::before {
+                z-index: -1;
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: #0077ffb2;
+                z-index: 5;
+            }
+
+            .Our-Counter-Info p {
+                width: 200px;
+                margin-left: -50px;
+            }
+
+            .icon-Counter {
+                font-size: 35px;
+                width: 80px;
+                height: 80px;
+                border: 10px solid #CDE1F8;
+                transition: 0.5s all;
+            }
+
+            .Our-ICons-Counter {
+                z-index: 5;
+            }
+
+            /* ------------------------End Counters------------------------ */
+            /* ------------------------Start Portfolio------------------------ */
+
+            .Our-Hover-Scale {
+                transition: 1s all;
+                cursor: pointer;
+            }
+
+            .Our-Card-Hover2 {
+                span {
+                    color: var(--main-color);
+                    font-family: 400;
+                }
+
+                p {
+                    font-size: 12.8px;
+                }
+
+                i {
+                    font-size: 20px;
+                    color: var(--main-color);
+                    border: 3px solid var(--main-color);
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+
+            .Our-Card-Hover2:hover .Our-Hover-Scale {
+                transform: scale(1.3);
+            }
+
+            /* ------------------------End Portfolio------------------------ */
+            /* ------------------------Start Carousel------------------------ */
+
+            .Our-Carousel {
+                background-image: url(../images/overlay-bg.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-position: center 200px;
+                position: relative;
+            }
+
+            .Carousel-Image {
+                width: 180px;
+                border-radius: 50%;
+            }
+
+            /* ------------------------End Carousel------------------------ */
+            /* ------------------------Start Blog------------------------ */
+
+            .Our-Blog-Style {
+                .author {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin: 1rem 0;
+                    display: block;
+                    font-size: 1.4rem;
+                }
+
+                .author-des {
+                    color: white;
+                    font-size: 1.25rem;
+                    font-weight: 300;
+                }
+
+                & a:hover span {
+                    color: var(--main-color);
+                }
+
+                span {
+                    color: black;
+                    transition: 1s all;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .Our-Blog-Bottom-Img {
+                    width: 50px;
+                    border-radius: 50%;
+                }
+
+                .Our-Border-Blog {
+                    border-top: 1px solid lightgray;
+                }
+
+                .Blog-After1 {
+                    color: white;
+                    position: relative;
+                }
+
+                .Blog-After1::after {
+                    position: absolute;
+                    top: 95%;
+                    right: 45%;
+                    padding: 5px;
+                    font-size: 13px;
+                    border-radius: 5px;
+                    background-color: var(--main-color);
+                    content: "TRAVEL";
+                }
+
+                .Blog-After2 {
+                    color: white;
+                    position: relative;
+                }
+
+                .Blog-After2::after {
+                    position: absolute;
+                    top: 95%;
+                    right: 42%;
+                    padding: 5px;
+                    font-size: 13px;
+                    border-radius: 5px;
+                    background-color: var(--main-color);
+                    content: "WEB DESIGN";
+                }
+
+                h2 {
+                    transition: 1s all;
+                }
+
+                a:hover h2 {
+                    color: var(--main-color);
+                }
+            }
+
+            /* ------------------------End Blog------------------------ */
+            /* ------------------------Start Form------------------------ */
+
+            .icon2 {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+                border: 4px solid var(--main-color);
+                transition: 0.5s all;
+
+                &:hover {
+                    background-color: var(--main-color);
+                    border: 4px solid #a3caf785;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+            .Contact-US h5 {
+                font-size: 2rem;
+                position: relative;
+                margin-top: 0;
+            }
+
+            .Contact-US h5::before {
+                margin: auto;
+                content: "";
+                position: absolute;
+                top: 45px;
+                left: 0;
+                width: 110px;
+                border-bottom: 3px solid var(--main-color);
+            }
+
+            .Send-BTN {
+                transition: 1s all;
+                width: 45%;
+            }
+
+            .Send-BTN:hover {
+                background-color: var(--main-color);
+                border: 4px solid #a3caf785;
+                color: white;
+                cursor: pointer;
+            }
+
+            .Our-Touch span {
+                color: var(--main-color);
+            }
+
+            /* ------------------------End Form------------------------ */
+
+            Footer {
+                /* height: 20vh; */
+                background-color: #0062D3;
+            }
